@@ -1,0 +1,20 @@
+{
+  "name": "promise-stream-utils",
+  "version": "1.0.8",
+  "main": "index.js",
+  "module": "index.es.js",
+  "devDependencies": {
+    "rollup": "^0.41.5"
+  },
+  "scripts": {
+    "prepare": "rollup -c",
+    "prepublish": "npm run prepare"
+  },
+  "files": [
+    "index.js",
+    "index.js.map",
+    "index.d.ts",
+    "index.es.js",
+    "index.es.js.map"
+  ]
+}
