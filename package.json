@@ -1,8 +1,11 @@
 {
   "name": "promise-stream-utils",
   "version": "1.0.8",
+  "description": "Various functions for working with streams inside async functions",
   "main": "index.js",
   "module": "index.es.js",
+  "repository": "NotWoods/promise-stream-utils",
+  "license": "MIT",
   "devDependencies": {
     "rollup": "^0.41.5"
   },
