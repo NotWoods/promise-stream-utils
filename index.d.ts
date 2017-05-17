@@ -2,7 +2,7 @@ import * as stream from 'stream';
 
 export function ended(stream: NodeJS.ReadableStream): Promise<void>;
 export function finished(stream: NodeJS.WritableStream): Promise<void>;
-export function toBuffer(stream: NodeJS.ReadableStream): Promise<void>;
+export function toBuffer(stream: NodeJS.ReadableStream): Promise<Buffer>;
 
 type Resolveable<T> = Promise<T> | T;
 type EncodingType = string | null;

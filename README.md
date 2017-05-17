@@ -7,13 +7,13 @@ an error event is fired.
 
 ### ended
 Resolves when the `'end'` event fires, rejects when the `'error'` event fires
-```
+```ts
 function ended(stream: NodeJS.ReadableStream): Promise<void>
 ```
 
 ### finished
 Resolves when the `'finish'` event fires, rejects when the `'error'` event fires
-```
+```ts
 function finished(stream: NodeJS.WritableStream): Promise<void>
 ```
 
@@ -34,6 +34,6 @@ and set the stream function inside options.
 
 ### toBuffer
 Loads an entire stream's contents into a buffer in memory
-```
-function ended(stream: NodeJS.ReadableStream): Promise<Buffer>
+```ts
+function toBuffer(stream: NodeJS.ReadableStream): Promise<Buffer>
 ```
