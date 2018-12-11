@@ -7,7 +7,7 @@
   "repository": "NotWoods/promise-stream-utils",
   "license": "MIT",
   "devDependencies": {
-    "rollup": "^0.41.5"
+    "rollup": "^0.67.4"
   },
   "scripts": {
     "prepare": "rollup -c",
