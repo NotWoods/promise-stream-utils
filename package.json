@@ -11,6 +11,7 @@
     "module": "index.es.js",
     "types": "index.d.ts",
     "scripts": {
+        "pretest": "npm run build",
         "test": "jest",
         "build": "rollup -c",
         "lint": "prettier \"src/**/*.js\" --write",
