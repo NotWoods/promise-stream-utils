@@ -1,8 +1,11 @@
 language: node_js
 node_js:
-    - 'lts/*'
+- lts/*
 sudo: false
 cache: npm
 script:
-    - npm test
-    - npm run lint:check
+- npm test
+- npm run lint:check
+notifications:
+  slack:
+    secure: f8OjJ4wOCHHVvTuIH9caTRUaKXUGmvEwk2NG1nEZ2pp+YUYAvNdYhHmi5uKc/pzVn5v8mmxIOp6WAO+aVARK205MRH4xIYhLtMIyA96szs0gCBQeYtGB/wiCND1RoHh9fWswqEiOetFLqBl81Gxfs5HCWILTte/hJw1R5RLmj9bzK2FV8YNnU0rp8PM5RRknUAyEEZHUVP+j+znRd5iPmEQQCE4IhJdB+Xuj+uKdl7jPR5AQsgKGszH/Z9qEhrj3wqz41j6125RXlTV60n2c73MZ6jzVma/k3H66Yb+/M6fYQnIhYJAyulLL4ytexPDOj/8z2oLabg+du4tOyNmzqgonITHSg8gNXCSiSuwl54NXY6PKq3z0PzQ21licPjRU4LYBRe+4SGrl7T5PztLUeaoPaKzg3KZM/6tuBV8u/Gpuk7uhohHcm8Ogq1wSiwEpNzNgD1RQtUJv3hvIurz7O/xqYvQQHQbgQseYOqGTLVyfJ3d8MktEHNJQPCUndKKUyDenNLxced3UHgdTvxV+jE5msFln7vWjwVTenReNdeHktkatsQ1PtBr/DvgrIl31ovLt+5lDpzLYUmaMEJyvhIy3r8oShhMYN61p91KJcb6Xyp933rCJ75XZhXXP3q9DAD95XIHM19zmNQ+PSuGNRnUEwQCOUze8GZ9oLhsRa1s=
