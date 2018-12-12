@@ -1,9 +1,11 @@
-export default {
-	entry: 'src/index.js',
-	sourceMap: true,
-	targets: [
-		{ dest: 'index.js', format: 'cjs' },
-		{ dest: 'index.es.js', format: 'es' },
-	],
-	external: ['stream'],
+/** @type {import("rollup").RollupWatchOptions} */
+const config = {
+    input: 'src/index.js',
+    output: [
+        { file: 'index.js', format: 'cjs', sourcemap: true },
+        { file: 'index.es.js', format: 'es', sourcemap: true },
+    ],
+    external: ['stream'],
 };
+
+export default config;
