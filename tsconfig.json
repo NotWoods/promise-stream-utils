@@ -1,0 +1,16 @@
+{
+    "include": ["./src/**/*.js", "index.d.ts"],
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "noEmit": true,
+        "checkJs": true,
+        "allowJs": true,
+        "pretty": true,
+        "strict": true,
+        "noUnusedLocals": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "moduleResolution": "node"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/lib": true,
+        "**/coverge": true,
+        "package-lock.json": true
+    },
+    "editor.formatOnSave": true
+}

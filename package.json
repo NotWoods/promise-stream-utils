@@ -1,23 +1,46 @@
 {
-  "name": "promise-stream-utils",
-  "version": "1.0.8",
-  "description": "Various functions for working with streams inside async functions",
-  "main": "index.js",
-  "module": "index.es.js",
-  "repository": "NotWoods/promise-stream-utils",
-  "license": "MIT",
-  "devDependencies": {
-    "rollup": "^0.41.5"
-  },
-  "scripts": {
-    "prepare": "rollup -c",
-    "prepublish": "npm run prepare"
-  },
-  "files": [
-    "index.js",
-    "index.js.map",
-    "index.d.ts",
-    "index.es.js",
-    "index.es.js.map"
-  ]
+    "name": "promise-stream-utils",
+    "version": "1.1.0",
+    "description": "Various functions for working with streams inside async functions",
+    "license": "MIT",
+    "author": "Tiger Oakes <contact@tigeroakes.com> (https://tigeroakes.com)",
+    "repository": "NotWoods/promise-stream-utils",
+    "bugs": "https://github.com/NotWoods/promise-stream-utils/issues",
+    "homepage": "https://github.com/NotWoods/promise-stream-utils#readme",
+    "main": "index.js",
+    "module": "index.es.js",
+    "types": "index.d.ts",
+    "scripts": {
+        "test": "jest",
+        "build": "rollup -c",
+        "lint": "prettier \"src/**/*.js\" --write",
+        "lint:check": "tsc && prettier \"src/**/*.js\" --list-different"
+    },
+    "devDependencies": {
+        "@types/jest": "^23.3.10",
+        "@types/node": "^10.12.12",
+        "husky": "^1.2.0",
+        "jest": "^23.6.0",
+        "prettier": "^1.15.3",
+        "rollup": "^0.41.6",
+        "typescript": "^3.2.2"
+    },
+    "files": [
+        "index.js",
+        "index.js.map",
+        "index.d.ts",
+        "index.es.js",
+        "index.es.js.map"
+    ],
+    "jest": {},
+    "husky": {
+        "hooks": {
+            "pre-commit": "npm run lint"
+        }
+    },
+    "prettier": {
+        "singleQuote": true,
+        "trailingComma": "all",
+        "proseWrap": "always"
+    }
 }
