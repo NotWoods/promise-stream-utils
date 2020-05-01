@@ -18,7 +18,7 @@
         "lint:check": "tsc && prettier \"src/**/*.js\" --list-different"
     },
     "devDependencies": {
-        "@types/jest": "^25.1.4",
+        "@types/jest": "^25.2.1",
         "@types/node": "^13.13.4",
         "@types/rollup": "^0.54.0",
         "husky": "^4.2.5",
