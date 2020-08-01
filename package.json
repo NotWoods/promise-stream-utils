@@ -23,7 +23,7 @@
         "@types/rollup": "^0.54.0",
         "husky": "^4.2.5",
         "jest": "^26.2.2",
-        "prettier": "^1.19.1",
+        "prettier": "^2.0.5",
         "rollup": "^2.23.0",
         "typescript": "^3.9.7"
     },
