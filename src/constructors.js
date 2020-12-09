@@ -2,12 +2,12 @@
 import { Readable, Writable, Duplex, Transform } from 'stream';
 
 function wrapRead(readFunc) {
-    return size =>
+    return (size) =>
         Promise.resolve(readFunc(size))
-            .then(result => {
+            .then((result) => {
                 if (result !== undefined) this.push(result);
             })
-            .catch(err => this.emit('error', err));
+            .catch((err) => this.emit('error', err));
 }
 function wrapWrite(writeFunc) {
     return (chunk, encoding, next) =>
@@ -20,14 +20,14 @@ function wrapWritev(writeFunc) {
 function wrapTransform(transformFunc) {
     return (chunk, encoding, next) =>
         Promise.resolve(transformFunc(chunk, encoding)).then(
-            result => next(null, result),
+            (result) => next(null, result),
             next,
         );
 }
 function wrapFlush(flushFunc) {
-    return next =>
+    return (next) =>
         Promise.resolve(flushFunc())
-            .then(result => {
+            .then((result) => {
                 if (result !== undefined) this.push(result);
             })
             .catch(next);
